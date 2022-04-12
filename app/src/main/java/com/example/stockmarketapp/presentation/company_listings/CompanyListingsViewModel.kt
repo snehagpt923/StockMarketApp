@@ -56,7 +56,7 @@ class CompanyListingsViewModel @Inject constructor(
                             state = state.copy(isLoading = result.isLoading)
                         }
                         is Error -> {
-                            result.message?.let {
+                             result.message?.let {
                                 state = state.copy(message = it)
                             }
                         }
